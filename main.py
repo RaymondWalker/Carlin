@@ -17,7 +17,7 @@ client: Client = Client(intents=intents)
 ##Message Functionality
 async def send_message(message: Message, user_message: str) -> None:
     if not user_message:
-        print('(Message was empty because intnerns wer not enabled properly)')
+        print('(Message was empty because intents were not enabled properly)')
         return
     
     if is_private := user_message[0] == '?': 
@@ -38,7 +38,7 @@ async def on_ready() -> None:
     print(f'{client.user} in now running!')
 
 
-##incominf messages
+##incoming messages
 @client.event
 async def on_message(message: Message) -> None:
     if message.author == client.user:
