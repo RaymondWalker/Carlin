@@ -13,6 +13,6 @@ def get_responses(user_input: str ) -> str:
         if 'sleep' in lowered:
             return 'Goodnight'
         else:
-            return choice(['I don't know what to say,
+            return choice(['I don/'t know what to say',
                             'Put together a comprehensible sentence please',
                             'You smell funny'])
